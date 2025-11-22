@@ -1,7 +1,7 @@
 # 🚚 SmartLoad 3D
 
 SmartLoad 3D is a lightweight **React + Vite + TypeScript** application for visualizing and managing **3D truck loading capacity**.  
-It offers an interactive 3D truck model, box configuration, loading logic, and optional data persistence via Supabase.
+It offers an interactive 3D truck model, box configuration, loading logic.
 
 ---
 
