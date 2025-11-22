@@ -22,14 +22,11 @@ It offers an interactive 3D truck model, box configuration, loading logic.
 
 (Add your images inside: `public/screenshots/`)
 
-### 🧱 Dashboard View
-![Dashboard](public/screenshots/dashboard.png)
+### 🧱 HomePage
+![Dashboard](public/screenshots/home.png)
 
 ### 🚚 3D Truck Visualization
-![Truck 3D](public/screenshots/truck-3d.png)
-
-### 📦 Add Box Page
-![Add Box](public/screenshots/add-box.png)
+![Truck 3D](public/screenshots/truck3d.png)
 
 ---
 
