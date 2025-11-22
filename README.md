@@ -1,62 +1,127 @@
 # 🚚 SmartLoad 3D
 
-SmartLoad 3D is a small React + Vite TypeScript app for visualizing and configuring 3D truck loading and capacity. It provides interactive UI for placing boxes, configuring truck dimensions, and quick persistence via Supabase helper.
+SmartLoad 3D is a lightweight **React + Vite + TypeScript** application for visualizing and managing **3D truck loading capacity**.  
+It offers an interactive 3D truck model, box configuration, loading logic, and optional data persistence via Supabase.
 
-## ✨ Highlights / Features
-- 3D truck visualization
-- Custom Truck Capacity Manager
-- Box Management Dashboard
-- Pop-Up Toasts
-- Generate Delivery Report
+---
 
+## ✨ Features
 
-## 🛠 Tech stack
-- Framework: React + TypeScript
-- Bundler/dev server: Vite — see [vite.config.ts](vite.config.ts)
-- Styling: Tailwind CSS — see [tailwind.config.ts](tailwind.config.ts) and [postcss.config.js](postcss.config.js)
-- Linting: ESLint — see [eslint.config.js](eslint.config.js)
-- Optional backend helper: Supabase — see [`supabase`](src/lib/supabase.ts)
-- Entry point: [`src/main.tsx`](src/main.tsx), main app [`src/App.tsx`](src/App.tsx)
+- 📦 **3D Truck Visualization**  
+- 🚛 **Truck Capacity Configuration**  
+- 🧱 **Box Management Dashboard**  
+- 🔔 **Toast Notifications**  
+- 📄 **Delivery Report Generation**  
+- ☁️ **Optional Supabase Backend Integration**  
+- ⚡ **Vite Fast Refresh + TypeScript**  
+- 🎨 **Tailwind CSS for UI**
 
-## 📁 Folder structure (key files)
-- [index.html](index.html)  
-- [package.json](package.json)  
-- [vite.config.ts](vite.config.ts)  
-- [tsconfig.json](tsconfig.json)  
-- [.env](.env) (environment variables for Supabase and other secrets)
+---
 
-src/
-- [src/main.tsx](src/main.tsx) — app bootstrap  
-- [src/App.tsx](src/App.tsx) — main app  
-- [src/index.css](src/index.css), [src/App.css](src/App.css) — styles  
-- components/
-  - [src/components/Navigation.tsx](src/components/Navigation.tsx) — `Navigation`  
-  - [src/components/TruckVisualization.tsx](src/components/TruckVisualization.tsx) — `TruckVisualization`  
-  - [src/components/TruckCapacityConfig.tsx](src/components/TruckCapacityConfig.tsx) — `TruckCapacityConfig`  
-  - [src/components/ui/](src/components/ui/) — shared UI primitives
-- pages/
-  - [src/pages/AddBox.tsx](src/pages/AddBox.tsx) — `AddBox`
-  - ... other pages in [src/pages/](src/pages/)
-- data/
-  - [src/data/dummyData.ts](src/data/dummyData.ts) — sample/demo data
-- hooks/
-  - [src/hooks/use-mobile.tsx](src/hooks/use-mobile.tsx) — `useMobile`
-  - [src/hooks/use-toast.tsx](src/hooks/use-toast.tsx) — `useToast`
-- lib/
-  - [src/lib/supabase.ts](src/lib/supabase.ts) — `supabase`
-  - [src/lib/utils.ts](src/lib/utils.ts) — helper utilities
-- vite-env.d.ts: [src/vite-env.d.ts](src/vite-env.d.ts)
+## 🖼️ Screenshots
 
-public/
-- [public/placeholder.svg](public/placeholder.svg)  
-- [public/robots.txt](public/robots.txt)
+(Add your images inside: `public/screenshots/`)
 
-Other config files:
-- [postcss.config.js](postcss.config.js)  
-- [tailwind.config.ts](tailwind.config.ts)  
-- [eslint.config.js](eslint.config.js)
+### 🧱 Dashboard View
+![Dashboard](public/screenshots/dashboard.png)
 
-## ▶️ How to run (local)
-1. Install dependencies
+### 🚚 3D Truck Visualization
+![Truck 3D](public/screenshots/truck-3d.png)
+
+### 📦 Add Box Page
+![Add Box](public/screenshots/add-box.png)
+
+---
+
+## 🛠 Tech Stack
+
+| Category | Technology |
+|---------|------------|
+| Framework | React + TypeScript |
+| Bundler | Vite |
+| Styling | Tailwind CSS |
+| Linting | ESLint |
+| Backend | Supabase (optional) |
+| Extras | Custom Hooks + Utilities |
+
+---
+
+## 📁 Folder Structure
+
+```
+SmartLoad-3D/
+├─ index.html
+├─ package.json
+├─ vite.config.ts
+├─ tsconfig.json
+├─ .env
+│
+├─ public/
+│  ├─ placeholder.svg
+│  ├─ robots.txt
+│  └─ screenshots/
+│
+├─ src/
+│  ├─ main.tsx
+│  ├─ App.tsx
+│  ├─ App.css
+│  ├─ index.css
+│  │
+│  ├─ components/
+│  │  ├─ Navigation.tsx
+│  │  ├─ TruckVisualization.tsx
+│  │  ├─ TruckCapacityConfig.tsx
+│  │  └─ ui/
+│  │
+│  ├─ pages/
+│  │  └─ AddBox.tsx
+│  │
+│  ├─ data/
+│  │  └─ dummyData.ts
+│  │
+│  ├─ hooks/
+│  │  ├─ use-mobile.tsx
+│  │  └─ use-toast.tsx
+│  │
+│  ├─ lib/
+│  │  ├─ supabase.ts
+│  │  └─ utils.ts
+│  │
+│  └─ vite-env.d.ts
+│
+├─ postcss.config.js
+├─ tailwind.config.ts
+└─ eslint.config.js
+```
+
+---
+
+## ▶️ Running Locally
+
+### 1. Install dependencies
 ```sh
 npm install
+```
+
+### 2. Start development server
+```sh
+npm run dev
+```
+
+### 3. Open in browser
+```
+http://localhost:5173
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Feel free to open issues or submit pull requests.
+
+---
+
+## 📜 License
+
+MIT License © 2025 SmartLoad 3D
